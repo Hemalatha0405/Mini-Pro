@@ -1,0 +1,72 @@
+/* Full-page gradient background */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* soft blue gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form container */
+.form {
+  background: rgba(255, 255, 255, 0.95); /* semi-transparent */
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+/* Heading */
+.form h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Labels */
+.label {
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Inputs */
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form input:focus {
+  border-color: #a1c4fd;
+  box-shadow: 0 0 5px rgba(161, 196, 253, 0.5);
+}
+
+/* Submit button */
+.button {
+  margin-top: 25px;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  color: white;
+  border: none;
+  padding: 12px 0;
+  width: 100%;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
+  transform: translateY(-2px);
+}
